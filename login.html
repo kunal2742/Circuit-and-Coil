@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #affdcf;
+      }
+      .form0 {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+      }
+      .form {
+        padding-bottom: 2rem;
+        grid-area: 3/4/9/8;
+        background-color: #32c2a5;
+        border: 5px solid;
+        border-color: #2b8573;
+        border-radius: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 1.2rem;
+        background-color: #b2fed2;
+        border-color: #2b8573;
+      }
+      label {
+        font-size: larger;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        font-size: 2.1rem;
+        padding-bottom: 2rem;
+      }
+      .button {
+        text-align: center;
+        padding-top: 1.6rem;
+      }
+      button {
+        font-size: 1.15rem;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        border: none;
+        cursor: pointer;
+        transition: 0.1s;
+        background-color: #b2fed2;
+        border: 2px solid rgb(1, 64, 1);
+      }
+
+      button:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      @media (max-width: 700px) {
+        .form0 {
+          display: grid;
+          height: 100vh;
+          grid-template-columns: repeat(10, 1fr);
+          grid-template-rows: repeat(10, 1fr);
+        }
+        .form {
+          grid-area: 2/2/8/10;
+          padding-left: 0.7rem;
+          padding-right: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form0">
+      <div class="form">
+        <h2>Login</h2>
+        <form action="index.html">
+          <div class="input1 input">
+            <label for="name">Enter Username: </label>
+            <input type="text" id="name" name="name1" required />
+          </div>
+          <div class="input2 input">
+            <label for="email">Enter Email: </label>
+            <input type="email" name="email1" id="email" required />
+          </div>
+          <div class="input3 input">
+            <label for="password">Enter Password: </label>
+            <input type="password" name="pass1" id="password" required />
+          </div>
+          <div class="button">
+            <a href="index.html"><button type="submit">Submit</button></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
